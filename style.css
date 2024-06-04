@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 
@@ -16,7 +17,6 @@ body {
     width: 740px;
     display: flex;
     margin: auto;
-    margin-top: 200px;
     height: 515px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 5%;
@@ -104,8 +104,8 @@ section:last-child {
 }
 
 section:last-child>h2 {
-    width: 100%;
-    margin-left: 80px;
+    /* width: 100%; */
+    margin-right: 180px;
 }
 
 section:first-child h2,
@@ -166,10 +166,14 @@ button {
 
 /******* Responsive *****************/
 
-@media (max-width: 750px){
+@media (max-width: 750px) {
+
+    body {
+        align-items: start;
+    }
 
     .container {
-        display: block;    
+        display: block;
         margin: 0;
         width: 100%;
         border-radius: 0;
@@ -178,12 +182,11 @@ button {
 
     section {
         height: 500px;
-        width : 100%;
+        width: 100%;
     }
 
     section:first-child {
-        border-top-left-radius : 0%;
-        border-top-right-radius : 0%;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
     }
 }
-
